@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
         <div className="text-center">
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white text-4xl font-bold">
-              SL
+              SBL
             </div>
           </div>
           

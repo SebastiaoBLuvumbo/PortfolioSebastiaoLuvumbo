@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, Code, Clock, Globe, Leaf, UtensilsCrossed, GraduationCap } from 'lucide-react';
+import { ExternalLink, Github, BookOpen, Clock, Globe, Leaf, UtensilsCrossed, GraduationCap } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const projects = [
@@ -28,22 +28,34 @@ const Projects: React.FC = () => {
     },
     {
       title: 'SAGA',
-      description: 'Sistema administrativa para gerenciamento de agrícolas, controle de produção e atividades de               campo.',
+      description: 'Sistema administrativo para gerenciamento de agrícolas, controle de produção e atividades de               campo.',
       technologies: ['Angular (Angular Material)', 'Node.js (AdonisJS)', 'MongoDB', 'Azure DevOps', 'GitHub'],
       icon: <Leaf className="w-6 h-6" />,
       color: 'from-green-500 to-emerald-500',
       github: 'https://github.com/SebastiaoBLuvumbo/sistemaAgricola',
     },
     {
-      title: 'BOOKAR+ & KEDUA',
-      description: 'BOOKAR+ é uma plataforma de estudos online voltada para a comercialização de cursos. KEDUA é um             sistema de gestão escolar desenvolvido para secretarias acadêmicas, com funcionalidades como matrículas,         controle de turmas, boletins e históricos escolares.',
+      title: 'BOOKAR+',
+      description: 'BOOKAR+ é uma plataforma de estudos online voltada para a comercialização de cursos.',
       technologies: [
         'Angular (Angular Material)',
-        'React.js',
-        'Node.js (AdonisJS, Fastify) com Clean Architecture',
-        'MongoDB, MySQL',
+        'Node.js (AdonisJS) com MVC',
+        'MySQL',
         'Azure DevOps',
-        'GitHub'
+        'GitLab'
+      ],
+      icon: <BookOpen className="w-6 h-6" />,
+      color: 'from-indigo-500 to-purple-600',
+    },
+    {
+      title: 'KEDUA',
+      description: 'Sistema de gestão escolar desenvolvido para secretarias acadêmicas, com funcionalidades como matrículas, controle de turmas, boletins e históricos escolares.',
+      technologies: [
+        'React.js',
+        'Node.js (Fastify) com Clean Architecture',
+        'MongoDB',
+        'Azure DevOps',
+        'GitLab'
       ],
       icon: <GraduationCap className="w-6 h-6" />,
       color: 'from-indigo-500 to-purple-600',
