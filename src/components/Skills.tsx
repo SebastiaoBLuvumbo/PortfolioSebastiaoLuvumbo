@@ -7,13 +7,13 @@ const Skills: React.FC = () => {
       title: 'Front-End',
       icon: <Monitor className="w-6 h-6" />,
       color: 'from-blue-500 to-cyan-500',
-      skills: ['Angular', 'React.js', 'JavaScript', 'TypeScript']
+      skills: ['HTML/CSS', 'Angular', 'React.js', 'JavaScript/TypeScript', 'Bootstrap', 'Tailwind CSS']
     },
     {
       title: 'Back-End',
       icon: <Server className="w-6 h-6" />,
       color: 'from-green-500 to-emerald-500',
-      skills: ['Node.js (AdonisJS, Express, Fastify, NestJS)', 'PHP (Laravel, CodeIgniter)']
+      skills: ['Node.js (Express, Fastify)', 'AdonisJS', 'NestJS', 'PHP (Laravel, CodeIgniter)', 'C#']
     },
     {
       title: 'Bancos de Dados',
