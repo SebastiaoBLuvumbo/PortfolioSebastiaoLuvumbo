@@ -7,7 +7,7 @@ const Skills: React.FC = () => {
       title: 'Front-End',
       icon: <Monitor className="w-6 h-6" />,
       color: 'from-blue-500 to-cyan-500',
-      skills: ['HTML/CSS', 'Angular', 'React.js', 'JavaScript/TypeScript', 'Bootstrap', 'Tailwind CSS', 'Wordpress']
+      skills: ['HTML/CSS', 'JavaScript/TypeScript', 'Angular (Angular Material)', 'React.js (Shadcn/ui)', 'Bootstrap', 'Tailwind CSS', 'Wordpress']
     },
     {
       title: 'Back-End',
@@ -25,7 +25,7 @@ const Skills: React.FC = () => {
       title: 'Ferramentas & Outros',
       icon: <Settings className="w-6 h-6" />,
       color: 'from-orange-500 to-red-500',
-      skills: ['Git (GitHub, GitLab)', 'KeyCloak (Autenticação)', 'Azure DevOps', 'Clean Architecture, MVC', 'Carbone.io, jsreport']
+      skills: ['Docker', 'Git (GitHub, GitLab)', 'KeyCloak (Autenticação), JWT', 'Azure DevOps', 'Clean Architecture, MVC', 'Carbone.io, jsreport', 'VPS Setup (Contabo)']
     }
   ];
 
