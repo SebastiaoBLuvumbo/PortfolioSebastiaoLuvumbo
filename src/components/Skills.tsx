@@ -25,7 +25,7 @@ const Skills: React.FC = () => {
       title: 'Ferramentas & Outros',
       icon: <Settings className="w-6 h-6" />,
       color: 'from-orange-500 to-red-500',
-      skills: ['Docker', 'Git (GitHub, GitLab)', 'KeyCloak (Autenticação), JWT', 'Azure DevOps', 'Clean Architecture, MVC', 'Carbone.io, jsreport', 'VPS Setup (Contabo)']
+      skills: ['Docker', 'Git (GitHub, GitLab)/Monorepo', 'KeyCloak (Autenticação), JWT', 'Azure DevOps', 'Clean Architecture, MVC', 'Carbone.io, jsreport', 'VPS Setup (Contabo)']
     }
   ];
 
