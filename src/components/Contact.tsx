@@ -1,19 +1,51 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Send, Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
+import emailjs from '@emailjs/browser';
+import { NotificationService } from '../services/notification.service';
+import { GeneralConstants } from '../constant/GeneralConstants';
+import { ToastContainer } from 'react-toastify';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: '',
+    title: '',
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const form = useRef<HTMLFormElement>(null);
+
+  function isFormValid() {
+    return (
+      (formData.name ?? "").trim() !== "" &&
+      (formData.email ?? "").trim() !== "" &&
+      (formData.title ?? "").trim() !== "" &&
+      (formData.message ?? "").trim() !== ""
+    );
+  }
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // alert('Mensagem enviada com sucesso! Retornarei o contato em breve.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
+
+    if (!form.current) return;
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID || "",
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "",
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY || ""
+      )
+      .then(
+        () => {
+          NotificationService.showToastMessage(GeneralConstants.MESSAGE_TYPE.SUCCESS, "Mensagem enviada com sucesso!");
+          form.current?.reset();
+          setFormData({ name: "", email: "", title: "", message: "" });
+        },
+        () => {
+          NotificationService.showToastMessage(GeneralConstants.MESSAGE_TYPE.ERROR, "Erro ao enviar mensagem. Tente novamente.!");
+        }
+      );
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -40,7 +72,7 @@ const Contact: React.FC = () => {
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8">
               Informações de Contato
             </h3>
-            
+
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
@@ -100,8 +132,8 @@ const Contact: React.FC = () => {
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8">
               Envie uma Mensagem
             </h3>
-            
-            <form onSubmit={handleSubmit} className="space-y-6">
+
+            <form ref={form} onSubmit={sendEmail} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                   Nome
@@ -141,8 +173,8 @@ const Contact: React.FC = () => {
                 <input
                   type="text"
                   id="subject"
-                  name="subject"
-                  value={formData.subject}
+                  name="title"
+                  value={formData.title}
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
@@ -168,12 +200,16 @@ const Contact: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2"
+                disabled={!isFormValid()}
+                className={`w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2 
+    ${!isFormValid() ? "opacity-50 cursor-not-allowed" : ""}`}
               >
                 <Send size={20} />
                 <span>Enviar Mensagem</span>
               </button>
+
             </form>
+            <ToastContainer position="top-right" autoClose={5000} />
           </div>
         </div>
       </div>

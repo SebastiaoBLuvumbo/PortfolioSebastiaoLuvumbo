@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <p className="flex items-center justify-center space-x-2 text-gray-400">
             <span>Desenvolvido com</span>
             <Heart className="text-red-500" size={16} />
-            <span>por Sebastião Biniaku Luvumbo</span>
+            <span>por Sebastião B. Luvumbo</span>
           </p>
           <p className="mt-2 text-gray-500 text-sm">
             &copy; {new Date().getFullYear()} Todos os direitos reservados.

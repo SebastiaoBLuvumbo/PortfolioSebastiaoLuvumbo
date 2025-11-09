@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Code, Users, Award } from 'lucide-react';
+import { GraduationCap, Code } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
@@ -24,7 +24,7 @@ const About: React.FC = () => {
           <div>
             <div className="mb-8">
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                Sou estudante de <strong>Engenharia Informática</strong> no <strong>ISPTEC – Instituto Superior Politécnico de Tecnologias e Ciências</strong> e <strong>Desenvolvedor Full Stack</strong> focado na criação de soluções inovadoras, escaláveis e de alto desempenho. Tenho domínio de Angular e React no front-end, e Node.js (AdonisJS, Fastify) e PHP (Laravel, CodeIgniter) no back-end, aplicando boas práticas como Clean Architecture, MVC e versionamento com Git.
+                Sou estudante de <strong>Engenharia Informática</strong> no <strong>ISPTEC - Instituto Superior Politécnico de Tecnologias e Ciências</strong> e <strong>Desenvolvedor Full Stack</strong> focado na criação de soluções inovadoras, escaláveis e de alto desempenho. Tenho domínio de Angular e React no front-end, e Node.js (AdonisJS, Fastify) e PHP (Laravel, CodeIgniter) no back-end, aplicando boas práticas como Clean Architecture, MVC e versionamento com Git.
               </p>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
 Apaixonado por resolver problemas com código, busco entregar sistemas robustos, eficientes e alinhados às necessidades do negócio, contribuindo para o crescimento de equipes e a excelência técnica dos projetos.

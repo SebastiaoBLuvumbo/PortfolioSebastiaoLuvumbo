@@ -6,13 +6,13 @@ const Projects: React.FC = () => {
     {
       title: 'K SOLID',
       description: 'Site Oficial da K SOLID',
-      technologies: ['Angular', 'HTML', 'CSS', 'TypeScript', 'GitLab', 'Strapi', 'Azure DevOps'],
+      technologies: ['Angular', 'HTML', 'CSS', 'TypeScript', 'GitLab', 'Strapi', 'Azure DevOps', 'Microsserviços'],
       icon: <Globe className="w-6 h-6" />,
       color: 'from-green-500 to-emerald-500',
       demo: 'https://ksolid.ao/#/home'
     },
     {
-      title: 'SakoExpress – Sistema Web para Restaurantes',
+      title: 'SakoExpress - Sistema Web para Restaurantes',
       description: 'Plataforma web integrada que permite ao cliente fazer pedidos pelo próprio dispositivo. Cozinheiros        recebem as solicitações em tempo real, preparam o pedido e o garçom é notificado automaticamente para a                 entrega.',
       technologies: ['HTML', 'CSS', 'JavasCript', 'Laravel', 'MySQL'],
       icon: <UtensilsCrossed className="w-6 h-6" />,
@@ -21,8 +21,8 @@ const Projects: React.FC = () => {
     },
     {
       title: 'KERP, Sistema de Controle de Ponto',
-      description: 'Sistema ERP completo com módulos para Gestão de Colaboradores, Controle de Assiduidade (via texto,         QR Code e biometria), Processamento de Salários, entre outros.',
-      technologies: ['Angular (Angular Material)', 'Node.js (AdonisJS)', 'MySQL', 'KeyCloak (Autenticação)', 'Azure           DevOps', 'GitLab'],
+      description: 'Sistema ERP completo com módulos para Gestão de Colaboradores, Controle de Assiduidade (via texto, QR Code e biometria), Processamento de Salários, entre outros.',
+      technologies: ['Angular (Angular Material)', 'Node.js (AdonisJS)', 'MySQL', 'KeyCloak (Autenticação)', 'Azure DevOps', 'GitLab', 'Microsserviços'],
       icon: <Clock className="w-6 h-6" />,
       color: 'from-blue-500 to-cyan-500',
     },
@@ -42,7 +42,8 @@ const Projects: React.FC = () => {
         'Node.js (AdonisJS) com MVC',
         'MySQL',
         'Azure DevOps',
-        'GitLab'
+        'GitLab',
+        'Microsserviços'
       ],
       icon: <BookOpen className="w-6 h-6" />,
       color: 'from-indigo-500 to-purple-600',

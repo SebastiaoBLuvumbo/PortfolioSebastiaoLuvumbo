@@ -20,8 +20,9 @@ const Hero: React.FC = () => {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
-            Sebastião Biniaku
-            <span className="block text-blue-600 dark:text-blue-400">Luvumbo</span>
+            Sebastião
+            <span className="text-blue-600 dark:text-blue-400"> B. </span>
+            Luvumbo
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6">
@@ -34,7 +35,7 @@ const Hero: React.FC = () => {
           
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             <a
-              href="https://www.linkedin.com/in/sebasti%C3%A3o-b-luvumbo-3569ab374/"
+              href="https://www.linkedin.com/in/sebasti%C3%A3o-b-luvumbo-ba8a44395/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors"
