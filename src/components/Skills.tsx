@@ -13,13 +13,13 @@ const Skills: React.FC = () => {
       title: 'Back-End',
       icon: <Server className="w-6 h-6" />,
       color: 'from-green-500 to-emerald-500',
-      skills: ['Node.js (Express, Fastify)', 'AdonisJS', 'NestJS', 'PHP (Laravel, CodeIgniter)', 'C#', 'APIs REST/RESTful', 'GraphQL']
+      skills: ['Node.js (Express, Fastify)', 'AdonisJS', 'NestJS', 'PHP (Laravel)', 'C#', 'APIs REST/RESTful', 'GraphQL']
     },
     {
       title: 'Bancos de Dados',
       icon: <Database className="w-6 h-6" />,
       color: 'from-purple-500 to-pink-500',
-      skills: ['MySQL', 'MongoDB', 'Firebase', 'SupaBase']
+      skills: ['MySQL', 'PostgreSQL', 'MongoDB', 'Firebase', 'SupaBase']
     },
     {
       title: 'Ferramentas & Outros',
