@@ -7,13 +7,13 @@ const Skills: React.FC = () => {
       title: 'Front-End',
       icon: <Monitor className="w-6 h-6" />,
       color: 'from-blue-500 to-cyan-500',
-      skills: ['HTML/CSS', 'JavaScript/TypeScript', 'Angular (Angular Material)', 'React.js (Shadcn/ui)', 'Bootstrap', 'Tailwind CSS', 'Wordpress']
+      skills: ['HTML/CSS', 'JavaScript/TypeScript', 'Angular (Angular Material)', 'React.js (Shadcn/ui)', 'Bootstrap/Tailwind CSS', 'Wordpress']
     },
     {
       title: 'Back-End',
       icon: <Server className="w-6 h-6" />,
       color: 'from-green-500 to-emerald-500',
-      skills: ['Node.js (Express, Fastify)', 'AdonisJS', 'NestJS', 'PHP (Laravel)', 'C#', 'APIs REST/RESTful', 'GraphQL']
+      skills: ['Node.js (AdonisJS, NestJS)', 'PHP (Laravel)', 'APIs REST/RESTful', 'GraphQL']
     },
     {
       title: 'Bancos de Dados',
@@ -25,7 +25,7 @@ const Skills: React.FC = () => {
       title: 'Ferramentas & Outros',
       icon: <Settings className="w-6 h-6" />,
       color: 'from-orange-500 to-red-500',
-      skills: ['Docker', 'Git (GitHub, GitLab)/Monorepo', 'KeyCloak (Autenticação), JWT', 'Azure DevOps', 'Clean Architecture, MVC', 'Carbone.io, jsreport', 'VPS Setup (Contabo)', 'Microsserviços']
+      skills: ['Docker', 'Git (GitHub, GitLab)/Monorepo', 'KeyCloak (Autenticação), JWT', 'Azure DevOps', 'Clean Architecture, MVC', 'Carbone.io, jsreport', 'Microsserviços']
     }
   ];
 
