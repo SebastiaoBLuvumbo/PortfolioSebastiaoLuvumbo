@@ -14,25 +14,27 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="mb-8">
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white text-4xl font-bold">
-              SBL
+            <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-[6px] border-white dark:border-gray-200 shadow-xl relative dark:bg-gray-800">
+              <img
+                src="https://github.com/SebastiaoBLuvumbo.png"
+                alt="Sebastião Luvumbo"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
-          
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
-            Sebastião
-            <span className="text-blue-600 dark:text-blue-400"> B. </span>
-            Luvumbo
+
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
+            Sebastião <span className="text-blue-500">B</span> Luvumbo
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6">
             Full Stack Developer
           </p>
-          
+
           <p className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Desenvolvedor Full Stack com +3 anos de experiência, focado em soluções escaláveis, alto desempenho e boas práticas como Clean Architecture. Comprometido com qualidade e geração de valor.
+            Desenvolvedor Full Stack com +4 anos de experiência, focado em soluções escaláveis, alto desempenho e boas práticas como Clean Architecture. Comprometido com qualidade e geração de valor.
           </p>
-          
+
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             <a
               href="https://www.linkedin.com/in/sebasti%C3%A3o-b-luvumbo-ba8a44395/"
@@ -60,7 +62,7 @@ const Hero: React.FC = () => {
               <span>Email</span>
             </a>
           </div>
-          
+
           <button
             onClick={() => scrollToSection('about')}
             className="animate-bounce inline-flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"

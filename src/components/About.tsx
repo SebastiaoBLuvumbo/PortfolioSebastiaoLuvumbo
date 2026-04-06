@@ -16,8 +16,12 @@ const About: React.FC = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left">
-            <div className="w-64 h-64 mx-auto md:mx-0 mb-6 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-6xl font-bold">
-              SBL
+            <div className="w-64 h-64 mx-auto md:mx-0 mb-6 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-800 transform hover:scale-105 transition-transform duration-300">
+              <img 
+                src="https://github.com/SebastiaoBLuvumbo.png" 
+                alt="Sebastião Luvumbo" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
@@ -38,7 +42,7 @@ Apaixonado por resolver problemas com código, busco entregar sistemas robustos,
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 dark:text-white">Formação</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Eng. Informática - ISPTEC</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Engenharia Informática - ISPTEC</p>
                   <p className="text-sm text-gray-600 dark:text-gray-400">Técnico de Informática - IPIL</p>
                 </div>
               </div>
@@ -49,7 +53,7 @@ Apaixonado por resolver problemas com código, busco entregar sistemas robustos,
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 dark:text-white">Experiência</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">+3 anos Full Stack Developer</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">+4 anos Full Stack Developer</p>
                 </div>
               </div>
             </div>
