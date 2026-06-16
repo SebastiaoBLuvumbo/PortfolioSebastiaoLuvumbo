@@ -19,11 +19,44 @@ import zero6 from '../../assets/img/hackahton_zero_barreiras/img6.jpeg';
 import zero7 from '../../assets/img/hackahton_zero_barreiras/img7.jpeg';
 import zero8 from '../../assets/img/hackahton_zero_barreiras/img8.jpeg';
 import zero9 from '../../assets/img/hackahton_zero_barreiras/img9.jpeg';
+import svj1 from '../../assets/img/hackathon_SVD_2026/img1.png';
+import svj2 from '../../assets/img/hackathon_SVD_2026/img2.jpeg';
+import svj3 from '../../assets/img/hackathon_SVD_2026/img3.jpeg';
+import svj4 from '../../assets/img/hackathon_SVD_2026/img4.jpeg';
+import svj5 from '../../assets/img/hackathon_SVD_2026/img5.jpeg';
+import svj6 from '../../assets/img/hackathon_SVD_2026/img6.jpeg';
+import svj7 from '../../assets/img/hackathon_SVD_2026/img7.jpeg';
+import svj8 from '../../assets/img/hackathon_SVD_2026/img8.jpeg';
 import isptec1 from '../../assets/img/isptec/img1.jpg';
 import isptec2 from '../../assets/img/isptec/img2.jpg';
 import isptec3 from '../../assets/img/isptec/img3.jpeg';
 
 const activities = [
+  {
+    title: 'Semana Verde da Juventude 2026 – Hackathon de Inovação Climática e Ambiental (EcoAngola) - KONDA',
+    type: 'Hackathon',
+    typeColor: 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400',
+    iconBg: 'bg-green-500',
+    icon: <Code className="w-6 h-6 text-white" />,
+    description: 'Vencedor do Hackathon da Semana Verde da Juventude 2026! 🏆 A minha equipa KONDA – Bioconversão Sustentável foi vencedora com uma solução para transformação sustentável de resíduos orgânicos, numa experiência de inovação e colaboração apoiada pela EcoAngola, Next Youth Community e pelas Embaixadas da Alemanha e Noruega em Angola.',
+    date: '4, 5, 6, 7 e 8 de Junho de 2026',
+    location: 'CCL (Centro de Ciência de Luanda)',
+    conquistas: [
+      'Membro da Equipa vencedora do Hackathon de Inovação Climática e Ambiental da Semana Verde da Juventude 2026',
+      'Colaboração na preparação do pitch e dos materiais de apresentação para avaliação do júri.',
+      'Desenvolvimento da identidade digital e apresentação visual da solução focada em economia circular e valorização de resíduos orgânicos.'
+    ],
+    gallery: [
+      svj1,
+      svj2,
+      svj3,
+      svj4,
+      svj5,
+      svj6,
+      svj7,
+      svj8
+    ]
+  },
   {
     title: 'Hackathon Zero Barreiras - NDINGA',
     type: 'Hackathon',
