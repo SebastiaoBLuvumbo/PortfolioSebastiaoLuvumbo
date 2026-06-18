@@ -15,33 +15,33 @@ const experiences = [
       'Implementação de chat em tempo real com WebSocket em projeto de agência de viagens, utilizando React, Angular + PHP'
     ]
   },
-  {
-    title: 'Front-End Developer',
-    company: 'Hackathon Zero Barreiras - NDINGA',
-    location: 'Academia do Empreendedor de Luanda, Benfica, Angola',
-    date: '24, 25, 26 e 31/03/2026',
-    badge: 'Hackathon',
-    badgeColor: 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400',
-    description: [
-      'Atuei como Front-end Developer no Hackathon Zero Barreiras, integrando uma equipa multidisciplinar no desenvolvimento de uma solução digital para higiene menstrual inclusiva',
-      'Criação de interfaces interativas e acessíveis para apresentação de soluções inovadoras, incluindo absorvente inteligente e dispositivo wearable de monitoramento de saúde',
-      'Desenvolvimento de experiências visuais com animações modernas, foco em usabilidade e acessibilidade para pessoas com deficiência (PCD’s)',
-      'Colaboração na definição da experiência do utilizador e storytelling da plataforma, promovendo autonomia, dignidade e inclusão na saúde reprodutiva feminina'
-    ]
-  },
-  {
-    title: 'Front-End Developer',
-    company: 'Timbuktoo AgriTech Hackathon - OMBELA',
-    location: '42 Luanda (ISPTEC), Talatona, Angola',
-    date: '24, 25 e 26/02/2026',
-    badge: 'Hackathon',
-    badgeColor: 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400',
-    description: [
-      'Atuei como Front-end Developer numa equipa multidisciplinar no desenvolvimento de uma plataforma inteligente de previsão climática agrícola',
-      'Criação de interfaces e dashboards para visualização de previsões e cenários de risco',
-      'Colaboração na experiência do utilizador e na proposta de valor baseada em previsões hiperlocais, alertas e planos de produção com apoio de IA'
-    ]
-  },
+  // {
+  //   title: 'Front-End Developer',
+  //   company: 'Hackathon Zero Barreiras - NDINGA',
+  //   location: 'Academia do Empreendedor de Luanda, Benfica, Angola',
+  //   date: '24, 25, 26 e 31/03/2026',
+  //   badge: 'Hackathon',
+  //   badgeColor: 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400',
+  //   description: [
+  //     'Atuei como Front-end Developer no Hackathon Zero Barreiras, integrando uma equipa multidisciplinar no desenvolvimento de uma solução digital para higiene menstrual inclusiva',
+  //     'Criação de interfaces interativas e acessíveis para apresentação de soluções inovadoras, incluindo absorvente inteligente e dispositivo wearable de monitoramento de saúde',
+  //     'Desenvolvimento de experiências visuais com animações modernas, foco em usabilidade e acessibilidade para pessoas com deficiência (PCD’s)',
+  //     'Colaboração na definição da experiência do utilizador e storytelling da plataforma, promovendo autonomia, dignidade e inclusão na saúde reprodutiva feminina'
+  //   ]
+  // },
+  // {
+  //   title: 'Front-End Developer',
+  //   company: 'Timbuktoo AgriTech Hackathon - OMBELA',
+  //   location: '42 Luanda (ISPTEC), Talatona, Angola',
+  //   date: '24, 25 e 26/02/2026',
+  //   badge: 'Hackathon',
+  //   badgeColor: 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400',
+  //   description: [
+  //     'Atuei como Front-end Developer numa equipa multidisciplinar no desenvolvimento de uma plataforma inteligente de previsão climática agrícola',
+  //     'Criação de interfaces e dashboards para visualização de previsões e cenários de risco',
+  //     'Colaboração na experiência do utilizador e na proposta de valor baseada em previsões hiperlocais, alertas e planos de produção com apoio de IA'
+  //   ]
+  // },
   {
     title: 'Desenvolvedor Full-stack',
     company: 'K SOLID',
